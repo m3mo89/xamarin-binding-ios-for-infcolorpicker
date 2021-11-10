@@ -14,6 +14,9 @@
 		101CC797273C6E2F00D3E640 /* InfColorPickerNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101CC78E273C6E2F00D3E640 /* InfColorPickerNavigationController.m */; };
 		101CC798273C6E2F00D3E640 /* InfSourceColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 101CC790273C6E2F00D3E640 /* InfSourceColorView.m */; };
 		101CC799273C6E2F00D3E640 /* InfColorIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 101CC791273C6E2F00D3E640 /* InfColorIndicatorView.m */; };
+		101CC79C273C6ED300D3E640 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101CC79B273C6ED300D3E640 /* UIKit.framework */; };
+		101CC79E273C6EE400D3E640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101CC79D273C6EE400D3E640 /* Foundation.framework */; };
+		101CC7A0273C6EEA00D3E640 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101CC79F273C6EEA00D3E640 /* CoreGraphics.framework */; };
 		10A3F518273C6859003E40B0 /* InfColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A3F517273C6859003E40B0 /* InfColorPicker.m */; };
 		10A3F519273C6859003E40B0 /* InfColorPicker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 10A3F516273C6859003E40B0 /* InfColorPicker.h */; };
 /* End PBXBuildFile section */
@@ -47,6 +50,9 @@
 		101CC790273C6E2F00D3E640 /* InfSourceColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfSourceColorView.m; sourceTree = "<group>"; };
 		101CC791273C6E2F00D3E640 /* InfColorIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfColorIndicatorView.m; sourceTree = "<group>"; };
 		101CC792273C6E2F00D3E640 /* InfColorBarPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfColorBarPicker.h; sourceTree = "<group>"; };
+		101CC79B273C6ED300D3E640 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		101CC79D273C6EE400D3E640 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		101CC79F273C6EEA00D3E640 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		10A3F513273C6859003E40B0 /* libInfColorPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libInfColorPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A3F516273C6859003E40B0 /* InfColorPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfColorPicker.h; sourceTree = "<group>"; };
 		10A3F517273C6859003E40B0 /* InfColorPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfColorPicker.m; sourceTree = "<group>"; };
@@ -57,17 +63,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101CC7A0273C6EEA00D3E640 /* CoreGraphics.framework in Frameworks */,
+				101CC79E273C6EE400D3E640 /* Foundation.framework in Frameworks */,
+				101CC79C273C6ED300D3E640 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101CC79A273C6ED200D3E640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				101CC79F273C6EEA00D3E640 /* CoreGraphics.framework */,
+				101CC79D273C6EE400D3E640 /* Foundation.framework */,
+				101CC79B273C6ED300D3E640 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		10A3F50A273C6859003E40B0 = {
 			isa = PBXGroup;
 			children = (
 				10A3F515273C6859003E40B0 /* InfColorPicker */,
 				10A3F514273C6859003E40B0 /* Products */,
+				101CC79A273C6ED200D3E640 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
