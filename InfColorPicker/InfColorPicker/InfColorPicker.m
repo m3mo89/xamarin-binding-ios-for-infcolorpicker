@@ -7,6 +7,6 @@
 
 #import "InfColorPicker.h"
 
-@implementation InfColorPicker
+//@implementation InfColorPicker
 
-@end
+//@end
