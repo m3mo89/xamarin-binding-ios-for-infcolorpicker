@@ -134,5 +134,11 @@
             <DependentUpon>ViewController.cs</DependentUpon>
         </Compile>
     </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\InfColorPickerBinding\InfColorPickerBinding\InfColorPickerBinding.csproj">
+        <Project>{7800305B-DFCF-4A1E-9407-C04F2216D335}</Project>
+        <Name>InfColorPickerBinding</Name>
+      </ProjectReference>
+    </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
